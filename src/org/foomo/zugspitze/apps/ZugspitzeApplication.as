@@ -16,9 +16,9 @@ package org.foomo.zugspitze.apps
 	[Event(name="zugspitzeViewAdd", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
 
 	/**
-	 * Zuspitzimplementation extending Flex Application
+	 * Zuspitzimplementation
 	 */
-	public class FlexApplication extends Application implements IApplication
+	public class ZugspitzeApplication extends Application implements IApplication
 	{
 		//-----------------------------------------------------------------------------------------
 		// ~ Variables
@@ -33,7 +33,7 @@ package org.foomo.zugspitze.apps
 		// ~ Constructor
 		//-----------------------------------------------------------------------------------------
 
-		public function FlexApplication()
+		public function ZugspitzeApplication()
 		{
 			super();
 			_zugspitze = new Zugspitze(this);

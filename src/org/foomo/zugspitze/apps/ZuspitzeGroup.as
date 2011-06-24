@@ -7,7 +7,7 @@ package org.foomo.zugspitze.apps
 
 	import flash.display.DisplayObject;
 
-	import spark.modules.Module;
+	import spark.components.Group;
 
 	[Event(name="zugspitzeControllerChanged", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
 	[Event(name="zugspitzeModelChanged", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
@@ -15,7 +15,7 @@ package org.foomo.zugspitze.apps
 	[Event(name="zugspitzeViewRemove", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
 	[Event(name="zugspitzeViewAdd", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
 
-	public class ModuleComponent extends Module implements IApplication
+	public class ZuspitzeGroup extends Group implements IApplication
 	{
 		//-----------------------------------------------------------------------------------------
 		// ~ Variables
@@ -30,7 +30,7 @@ package org.foomo.zugspitze.apps
 		// ~ Constructor
 		//-----------------------------------------------------------------------------------------
 
-		public function ModuleComponent()
+		public function ZuspitzeGroup()
 		{
 			super();
 			this._zugspitze = new Zugspitze(this);
