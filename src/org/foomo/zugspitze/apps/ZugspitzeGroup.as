@@ -15,7 +15,7 @@ package org.foomo.zugspitze.apps
 	[Event(name="zugspitzeViewRemove", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
 	[Event(name="zugspitzeViewAdd", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
 
-	public class ZuspitzeGroup extends Group implements IApplication
+	public class ZugspitzeGroup extends Group implements IApplication
 	{
 		//-----------------------------------------------------------------------------------------
 		// ~ Variables
@@ -30,7 +30,7 @@ package org.foomo.zugspitze.apps
 		// ~ Constructor
 		//-----------------------------------------------------------------------------------------
 
-		public function ZuspitzeGroup()
+		public function ZugspitzeGroup()
 		{
 			super();
 			this._zugspitze = new Zugspitze(this);
