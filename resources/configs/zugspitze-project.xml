@@ -5,6 +5,7 @@
 	<name>Flex 4 (Spark)</name>
 	<description>Flex 4 Zugspitze extension.</description>
 	<dependencies>
+		<id>org.foomo.flash</id>
 		<id>org.foomo.zugspitze.core</id>
 	</dependencies>
 </config>
