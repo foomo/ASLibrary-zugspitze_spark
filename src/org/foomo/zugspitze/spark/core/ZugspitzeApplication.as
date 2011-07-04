@@ -14,14 +14,15 @@
  * You should have received a copy of the GNU Lesser General Public License along with
  * the foomo Opensource Framework. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.foomo.zugspitze.apps
+package org.foomo.zugspitze.spark.core
 {
+	import flash.display.DisplayObject;
+
+	import org.foomo.zugspitze.core.IApplication;
+	import org.foomo.zugspitze.core.Zugspitze;
 	import org.foomo.zugspitze.core.ZugspitzeController;
 	import org.foomo.zugspitze.core.ZugspitzeModel;
-	import org.foomo.zugspitze.core.Zugspitze;
 	import org.foomo.zugspitze.events.ZugspitzeEvent;
-
-	import flash.display.DisplayObject;
 
 	import spark.components.Application;
 

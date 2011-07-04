@@ -14,16 +14,17 @@
  * You should have received a copy of the GNU Lesser General Public License along with
  * the foomo Opensource Framework. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.foomo.zugspitze.apps
+package org.foomo.zugspitze.spark.core
 {
-	import org.foomo.zugspitze.core.ZugspitzeController;
-	import org.foomo.zugspitze.core.ZugspitzeModel;
-	import org.foomo.zugspitze.core.Zugspitze;
-	import org.foomo.zugspitze.events.ZugspitzeEvent;
-
 	import flash.display.DisplayObject;
 
-	import spark.components.Group;
+	import org.foomo.zugspitze.core.IApplication;
+	import org.foomo.zugspitze.core.Zugspitze;
+	import org.foomo.zugspitze.core.ZugspitzeController;
+	import org.foomo.zugspitze.core.ZugspitzeModel;
+	import org.foomo.zugspitze.events.ZugspitzeEvent;
+
+	import spark.modules.Module;
 
 	[Event(name="zugspitzeControllerChanged", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
 	[Event(name="zugspitzeModelChanged", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
@@ -40,7 +41,7 @@ package org.foomo.zugspitze.apps
 	 * @license http://www.gnu.org/licenses/lgpl.txt
 	 * @author  franklin <franklin@weareinteractive.com>
 	 */
-	public class ZugspitzeGroup extends Group implements IApplication
+	public class ZugspitzeModule extends Module implements IApplication
 	{
 		//-----------------------------------------------------------------------------------------
 		// ~ Variables
@@ -55,7 +56,7 @@ package org.foomo.zugspitze.apps
 		// ~ Constructor
 		//-----------------------------------------------------------------------------------------
 
-		public function ZugspitzeGroup()
+		public function ZugspitzeModule()
 		{
 			super();
 			this._zugspitze = new Zugspitze(this);
