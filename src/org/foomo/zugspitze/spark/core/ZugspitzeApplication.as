@@ -23,6 +23,7 @@ package org.foomo.zugspitze.spark.core
 	import org.foomo.zugspitze.core.ZugspitzeController;
 	import org.foomo.zugspitze.core.ZugspitzeModel;
 	import org.foomo.zugspitze.events.ZugspitzeEvent;
+	import org.foomo.zugspitze.zugspitze_internal;
 
 	import spark.components.Application;
 
@@ -152,6 +153,20 @@ package org.foomo.zugspitze.spark.core
 		public function get view():DisplayObject
 		{
 			return _zugspitze.view;
+		}
+
+		//-----------------------------------------------------------------------------------------
+		// ~ Overriden methods
+		//-----------------------------------------------------------------------------------------
+
+		/**
+		 * Call the internal zugspitze commitProperties method
+		 */
+		override protected function commitProperties():void
+		{
+			_zugspitze.zugspitze_internal::commitProperties();
+
+			super.commitProperties();
 		}
 
 		//-----------------------------------------------------------------------------------------
